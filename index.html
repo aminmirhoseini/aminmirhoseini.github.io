@@ -10,10 +10,11 @@
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 <body>
-
-<header class="header">
-    <a href="#" class="logo">Portfolio</a>
+<header class="header" id="header">
+    <a href="#" class="logo">Protfolio</a>
+    <i onclick=showslidebar() class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
+        <i onclick=hideslidebar() class="bx bx-x" id="x-icon"></i>
         <a href="#home" style="--k:1" class="active">Home</a>
         <a href="#about" style="--k:2">About</a>
         <a href="#skills" style="--k:3">Skill</a>
@@ -21,22 +22,19 @@
         <a href="#contact" style="--k:5">Contact</a>
         <div class="bx bx-moon" id="darkmode-icon" style="--k:6"></div>
     </nav>
-
 </header>
-
 <section class="home" id="home">
     <div class="home-content">
-
         <h1>Hi, My Name is </h1>
         <span class="home-text">AmiN</span>
         <div class="change-text">
-            <h3>And I am</h3><br>
-            <h3>
+            <h3 >And I am</h3><br>
+            <h3 class="word-head">
                 <span class="word">frontend Developer</span>
                 <span class="word">backend Developer</span>
-                <span class="word">artificial Intelligence Programmer</span>
-                <span class="word">sometimes Ethical Hacker</span>
-                <span class="word">sometimes Ethical Hacker</span>
+                <span class="word">artificial</span>
+                <span class="word">sometimes </span>
+                <span class="word">sometimes Ethical</span>
             </h3>
         </div>
 
@@ -58,36 +56,41 @@
 </section>
 
 <section class="about" id="about">
-    <div class="about-img">
-        <img src="2.jpeg">
-
-        <div class="info-about1">
-            <span>11+</span>
-            <p>Years of Experience</p>
-        </div>
-
-        <div class="info-about2">
-            <span>12+</span>
-            <p>Years of Experience</p>
-        </div>
-
-        <div class="info-about3">
-            <span>10+</span>
-            <p>Years of Experience</p>
-        </div>
-
-    </div>
-    <div class="about-text">
+    <div class="about-head">
         <h2>About<span>Me</span></h2>
-        <h4>Full Stack Developer!</h4>
-        <p class="thread">I thought I'd share a few interesting things about myself. Maybe you'll find them as fascinating as I do!
-            I can speak five languages fluently! English, Spanish, French, German, and Japanese. It's been a lifelong passion of mine to learn new languages and immerse myself in different cultures.
-            I've always been fascinated by the stars and the universe. I own a telescope and often spend my nights stargazing and learning about constellations and celestial events.
-            I've traveled to over 20 countries and counting! Some of my favorite destinations include Japan for its rich culture, Italy for its incredible food, and New Zealand for its stunning landscapes
-            I love experimenting in the kitchen and trying out new recipes. My specialty is fusion cuisine, where I combine elements from different culinary traditions to create unique dishes.
-            I'm an avid reader and enjoy books from various genres, from classic literature to contemporary fiction and non-fiction. One of my favorite authors is Haruki Murakami.
-        </p>
-        <a href="#" class="btn-box">More About Me</a>
+    </div>
+    <div class="about-content">
+        <div class="about-img">
+            <img src="2.jpeg">
+
+            <div class="info-about1">
+                <span>11+</span>
+                <p>Years of Experience</p>
+            </div>
+
+            <div class="info-about2">
+                <span>12+</span>
+                <p>Years of Experience</p>
+            </div>
+
+            <div class="info-about3">
+                <span>10+</span>
+                <p>Years of Experience</p>
+            </div>
+
+        </div>
+        <div class="about-text">
+
+            <h4>Full Stack Developer!</h4>
+            <p class="thread">I thought I'd share a few interesting things about myself. Maybe you'll find them as fascinating as I do!
+                I can speak five languages fluently! English, Spanish, French, German, and Japanese. It's been a lifelong passion of mine to learn new languages and immerse myself in different cultures.
+                I've always been fascinated by the stars and the universe. I own a telescope and often spend my nights stargazing and learning about constellations and celestial events.
+                I've traveled to over 20 countries and counting! Some of my favorite destinations include Japan for its rich culture, Italy for its incredible food, and New Zealand for its stunning landscapes
+                I love experimenting in the kitchen and trying out new recipes. My specialty is fusion cuisine, where I combine elements from different culinary traditions to create unique dishes.
+                I'm an avid reader and enjoy books from various genres, from classic literature to contemporary fiction and non-fiction. One of my favorite authors is Haruki Murakami.
+            </p>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
     </div>
 </section>
 
@@ -134,90 +137,93 @@
 </section>
 
 <section class="skills" id="skills">
-    <div class="skill-head">
-        <h2>My<span>Skills</span></h2>
-    </div>
-    <div class="container1">
-        <h1 class="heading1">Technical Skills</h1>
-        <div class="technical-bars">
-            <div class="bar"><i style="color:#c32ec9" class='bx bxl-python'></i>
-                <div class="info">
-                    <span>python</span>
-                </div>
-                <div class="progress-line python">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i style="color:#1fa8c7" class='bx bxs-network-chart'></i>
-                <div class="info">
-                    <span>Machine learning</span>
-                </div>
-                <div class="progress-line machinelearning">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i style="color:#2e83c9" class='bx bxl-css3'></i>
-                <div class="info">
-                    <span>CSS</span>
-                </div>
-                <div class="progress-line css">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i style="color:#c9572e" class='bx bxl-html5'></i>
-                <div class="info">
-                    <span>HTML</span>
-                </div>
-                <div class="progress-line html">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i style="color:#eae614" class='bx bxl-javascript'></i>
-                <div class="info">
-                    <span>Java Script</span>
-                </div>
-                <div class="progress-line java">
-                    <span></span>
-                </div>
-            </div>
 
+    <div class="one-container">
+        <div class="skill-head">
+            <h2>My<span>Skills</span></h2>
         </div>
-    </div>
+        <div class="container1">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="technical-bars">
+                <div class="bar"><i style="color:#c32ec9" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#1fa8c7" class='bx bxs-network-chart'></i>
+                    <div class="info">
+                        <span>Machine learning</span>
+                    </div>
+                    <div class="progress-line machinelearning">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#2e83c9" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#c9572e" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#eae614" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>Java Script</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span></span>
+                    </div>
+                </div>
 
-    <div class="container2">
-        <h1 class="heading1">Professional skills</h1>
-        <div class="radial-bars">
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"> </circle>
-                </svg>
-                <div class="percentage">10%</div>
-                <div class="text">creativity</div>
             </div>
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"> </circle>
-                </svg>
-                <div class="percentage">20%</div>
-                <div class="text">creativity</div>
-            </div>
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
-                    <circle class="path path-3" cx="100" cy="100" r="80"> </circle>
-                </svg>
-                <div class="percentage">70%</div>
-                <div class="text">creativity</div>
-            </div>
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
-                    <circle class="path path-4" cx="100" cy="100" r="80"> </circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">creativity</div>
+        </div>
+
+        <div class="container2">
+            <h1 class="heading1">Professional skills</h1>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"> </circle>
+                    </svg>
+                    <div class="percentage">10%</div>
+                    <div class="text">creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"> </circle>
+                    </svg>
+                    <div class="percentage">20%</div>
+                    <div class="text">creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"> </circle>
+                    </svg>
+                    <div class="percentage">70%</div>
+                    <div class="text">creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"> </circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">creativity</div>
+                </div>
             </div>
         </div>
     </div>
@@ -228,72 +234,83 @@
         <h2>My<span>projects</span></h2>
     </div>
 
-        <div class="portfolio-gallery">
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="7.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Back-end Developer</h3>
-                    <p>Something I want to say</p>
-                </div>
+    <div class="portfolio-gallery">
+        <div class="port-box">
+            <div class="port-img">
+                <img src="7.jpg" alt="">
             </div>
-
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="8.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Graphic Design</h3>
-                    <p>Something I want to say</p>
-                </div>
+            <div class="port-content">
+                <h3>Back-end Developer</h3>
+                <p>Something I want to say</p>
             </div>
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="9.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Ethical Hacker</h3>
-                    <p>Something I want to say</p>
-                </div>
-            </div>
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="10.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Programmer</h3>
-                    <p>Something I want to say</p>
-                </div>
-            </div>
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="11.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Data-Science</h3>
-                    <p>Something I want to say</p>
-                </div>
-            </div>
-
-            <div class="port-box">
-                <div class="port-img">
-                    <img src="7.jpg" alt="">
-                </div>
-                <div class="port-content">
-                    <h3>Graphic Design</h3>
-                    <p>Something I want to say</p>
-                </div>
-            </div>
-
         </div>
 
+        <div class="port-box">
+            <div class="port-img">
+                <img src="8.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Something I want to say</p>
+            </div>
+        </div>
+        <div class="port-box">
+            <div class="port-img">
+                <img src="9.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>Ethical Hacker</h3>
+                <p>Something I want to say</p>
+            </div>
+        </div>
+        <div class="port-box">
+            <div class="port-img">
+                <img src="10.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>Programmer</h3>
+                <p>Something I want to say</p>
+            </div>
+        </div>
+        <div class="port-box">
+            <div class="port-img">
+                <img src="11.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>Data-Science</h3>
+                <p>Something I want to say</p>
+            </div>
+        </div>
+
+        <div class="port-box">
+            <div class="port-img">
+                <img src="7.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>Graphic Design</h3>
+                <p>Something I want to say</p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="testimonials" id="testimonials">
     <div class="testimonials-box">
         <h2 class="test-head">My<span>References</span></h2>
         <div class="wrapper">
+            <div class="testimonials-item">
+                <img src="12.jpg" alt="">
+                <h2>Marilyn</h2>
+                <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <p>"Lorem"</p>
+            </div>
             <div class="testimonials-item">
                 <img src="12.jpg" alt="">
                 <h2>Marilyn</h2>

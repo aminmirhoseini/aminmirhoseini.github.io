@@ -1,4 +1,20 @@
+const mediaQuery = window.matchMedia("(max-width: 1091px)");
 
+function showslidebar() {
+    const sidebar = document.querySelector('.navbar');
+        sidebar.style.right = '0';
+
+}
+
+function hideslidebar() {
+    const sidebar = document.querySelector('.navbar');
+    if(mediaQuery.matches) {
+        sidebar.style.right = '-100%';
+    }
+    else {
+        sidebar.style.right = '0';
+    }
+}
 
 let words = document.querySelectorAll(".word");
 words.forEach((word) => {
@@ -37,9 +53,6 @@ let changeText =()=>{
 };
 changeText();
 setInterval(changeText, 3000);
-
-
-
 
 let DarkMoonIcon = document.querySelector("#darkmode-icon");
 DarkMoonIcon.onclick = () =>{
