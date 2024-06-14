@@ -1197,6 +1197,7 @@ footer .copyright .year:hover{
         position: relative;
         left: -100%;
     }
+
     .home .home-content .btn-box{
         position: relative;
         left: -5px;
@@ -1277,7 +1278,6 @@ footer .copyright .year:hover{
     }
     .education .timeline-item:nth-child(odd){
         padding-right: 0;
-        text-align: center;
     }
     .education .timeline-item:nth-child(odd),
     .education .timeline-item:nth-child(even){
