@@ -28,7 +28,9 @@ words.forEach((word) => {
     });
 });
 
-alert("This a just a Hack !!! Good Luck")
+alert("You can run, but you cant hide !!!")
+alert("I See You !!!")
+alert("Just Kidding welcome to My Profile :))")
 
 let currentWordIndex = 0;
 let maxWordIndex = words.length - 1;
