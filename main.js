@@ -28,7 +28,7 @@ words.forEach((word) => {
     });
 });
 
-
+alert("This a just a Hack !!! Good Luck")
 
 let currentWordIndex = 0;
 let maxWordIndex = words.length - 1;
