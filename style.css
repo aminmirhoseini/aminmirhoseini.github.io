@@ -285,11 +285,8 @@ section{
 }
 
 .img-hero{
-    position: relative;
-    right: 20%;
     animation: floatImage 4s ease-in-out infinite;
     animation-delay: 3s;
-
 }
 
 .img-hero img{
