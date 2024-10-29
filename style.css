@@ -285,6 +285,8 @@ section{
 }
 
 .img-hero{
+    position: relative;
+    right: -30px;
     animation: floatImage 4s ease-in-out infinite;
     animation-delay: 3s;
 }
