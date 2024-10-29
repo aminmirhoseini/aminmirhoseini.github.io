@@ -189,7 +189,6 @@ section{
 .change-text h3 .word .letter{
     position: relative;
     transform-origin: center center 25px;
-    font-family: 'Dancing Script', cursive;
 
 }
 .change-text h3 .word .letter.out{
@@ -543,7 +542,7 @@ section{
     color: var(--gradient-color-bg);
     margin: 0 0 10px;
     font-weight: 600;
-    font-family: 'Castoro Titling', cursive;
+    
 }
 
 .education .timeline-content p {
