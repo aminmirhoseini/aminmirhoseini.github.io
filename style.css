@@ -284,6 +284,58 @@ section{
     animation: animate 1s linear infinite;
 }
 
+.info-about span {
+    font-size: 2.2vw;
+    font-weight: 600;
+    
+}
+
+.info-about p {
+    position: relative;
+    font-size: .6vw;
+    text-align: center;
+    font-weight: 800;
+}
+
+.info-about1,
+.info-about2,
+.info-about3{
+    background-color: transparent;
+    position: absolute;
+    padding: 10px;
+    width: 20%;
+    height: 20%;
+    border-radius: 69% 31% 66% 34%/ 21% 30% 70% 79%;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(160,8,156,1)51%;
+    box-shadow: 0 0 5px #8400ff,
+    0 0 15px #8400ff, 0 0 30px #8400ff,
+    0 0 45px #8400ff, 0 0 10px #8400ff;
+    transition: 1s;
+    animation: morph 6s linear infinite;
+}
+
+.info-about1{
+    left: -30%;
+    top: 2%;
+}
+.info-about2{
+    left: -50%;
+    top: 50%;
+}
+.info-about3{
+    left: -20%;
+    top: 95%;
+}
+.info-about1:hover,
+.info-about2:hover,
+.info-about3:hover{
+    transform: scale(1.5);
+}
+
 .img-hero{
     position: relative;
     margin-left: 30%;
@@ -373,14 +425,17 @@ section{
 }
 
 .about .about-img .aboutHero{
-    width: 35vw;
+    width: 25vw;
     height: auto;
-    border-radius: 50%;
+    border: 3px solid var(--main-color2);
+    border-radius: 69% 31% 66% 34%/ 21% 30% 70% 79%;
+    box-shadow: 0 0 25px #8400ff, 0 0 50px #8400ff;
+    animation: morph 6s linear infinite;
 }
 
 .about-img .ring{
     position: absolute;
-    top: 22%;
+    top: 5%;
     right: 1%;
 }
 
@@ -1036,6 +1091,22 @@ footer{
     100% {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+@keyframes morph {
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30%/ 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50%/ 30% 30% 70% 70%;
+    }
+    60%{
+        border-radius: 100% 60% 60% 100%/ 100% 100% 60% 60%;
+    }
+    80%{
+        border-radius: 69% 31% 66% 34%/ 21% 30% 70% 79%;
     }
 }
 
