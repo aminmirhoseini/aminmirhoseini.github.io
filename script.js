@@ -92,3 +92,38 @@ const animateSkillBars = () => {
 };
 
 window.addEventListener('scroll', animateSkillBars);
+
+
+// Make response contact form
+
+const form = document.getElementById("contactForm");
+const statusDiv = document.getElementById("statusMessage");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    subject: form.email.subject,
+    message: form.message.value
+    };
+
+    try {
+    const res = await fetch("https://delicate-dew-cea1.mirhoseini-amin1374.workers.dev/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    });
+
+    if (res.ok) {
+        const html = await res.text();
+        document.body.innerHTML = html;
+    } else {
+        const text = await res.text();
+        statusDiv.innerHTML = `<span class="text-danger">Error: ${text}</span>`;
+    }
+    } catch (err) {
+    statusDiv.innerHTML = `<span class="text-danger">Network error: ${err.message}</span>`;
+    }
+});
