@@ -127,3 +127,17 @@ form.addEventListener("submit", async (e) => {
     statusDiv.innerHTML = `<span class="text-danger">Network error: ${err.message}</span>`;
     }
 });
+
+// copy phone number
+function copyText() {
+    const textToCopy = "Sorry, Can't be public, Please Use The Contact Form";
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            const msg = document.getElementById("copyMessage");
+            msg.style.opacity = "1";      
+            setTimeout(() => {
+                msg.style.opacity = "0";  
+            }, 1500);
+        })
+        .catch(err => console.error("Copy failed:", err));
+}

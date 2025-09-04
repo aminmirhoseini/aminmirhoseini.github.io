@@ -246,9 +246,8 @@
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div>
-                            <h4 class="font-semibold mb-2">Name: <span class="text-slate-300">Alex Carter</span></h4>
-                            <h4 class="font-semibold mb-2">Email: <span class="text-slate-300">alex@example.com</span></h4>
-                            <h4 class="font-semibold mb-2">Phone: <span class="text-slate-300">+1 (555) 123-4567</span></h4>
+                            <h4 class="font-semibold mb-2">Name: <span class="text-slate-300">Amin Mirhoseini</span></h4>
+                            <h4 class="font-semibold mb-2">Email: <span class="text-slate-300">mirhiseini.m.amin@gmail.com</span></h4>
                         </div>
                         <div>
                             <h4 class="font-semibold mb-2">Age: <span class="text-slate-300">28</span></h4>
@@ -695,9 +694,12 @@
                             <div class="bg-slate-800 p-3 rounded-full mr-4">
                                 <i class="fas fa-phone-alt text-primary text-xl"></i>
                             </div>
-                            <div>
+                            <div onclick="copyText()" class="cursor-pointer">
                                 <h4 class="font-bold mb-1">Phone</h4>
-                                <p class="text-slate-400">+1 (555) 123-4567</p>
+                                <p class="text-slate-400">Click Me !</p>
+                                <span id="copyMessage" class="relative left-0 top-2 mt-2 bg-green-500 text-white px-2 py-1 rounded opacity-0 transition-opacity duration-500">
+                                    Copied!
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -789,5 +791,6 @@
     </button>
     
     <script src="script.js"></script>
+    
 </body>
 </html>
