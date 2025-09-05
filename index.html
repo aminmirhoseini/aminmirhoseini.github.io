@@ -71,6 +71,38 @@
         .active::after {
             width: 100%;
         }
+        .change-text {
+            margin-bottom: 4ch;
+        }
+        .change-text h3 .word{
+            position: absolute;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            opacity: 0;
+            background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            white-space: normal;
+        }
+        .change-text h3 .word .letter{
+            position: relative;
+            transform-origin: center center 25px;
+
+        }
+        .change-text h3 .word .letter.out{
+            transform: rotateX(90deg);
+            transition: 0.48s cubic-bezier(0.6, 0, 0.7, 0.2);
+        }
+
+        .change-text h3 .word .letter.in{
+            transition: 0.5s ease;
+        }
+
+        .change-text h3 .word .letter.behind{
+            transform: rotateX(-90deg);
+        }
         
         .timeline-item::before {
             content: '';
@@ -184,9 +216,21 @@
     <section id="home" class="min-h-screen flex items-center pt-20">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Rehana</span></h1>
-                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-slate-300">Frontend Developer</h2>
-                <p class="text-lg mb-8 text-slate-400 max-w-lg">
+                <h1 class="text-4xl md:text-6xl font-bold mb-3">Hi, I'm <span class="gradient-text">Amin</span></h1>
+
+                <div class="change-text">
+                    <h3 class="text-2xl md:text-2xl font-medium mb-0">Let's Learn Some: </h3><br>
+                    <h3 class="word-head">
+                        <span class="word">Artificial Intelligent</span>
+                        <span class="word">Machine Learning</span>
+                        <span class="word">Deep Learning</span>
+                        <span class="word">Full-Stack Dev.</span>
+                        <span class="word">Bash Script</span>
+                        <span class="word">Linux Distribution</span>
+                    </h3>
+                </div>
+
+                <p class="text-lg mb-2 text-slate-400 max-w-lg">
                     I build exceptional digital experiences that are fast, accessible, and visually appealing. 
                     Let's create something amazing together.
                 </p>
