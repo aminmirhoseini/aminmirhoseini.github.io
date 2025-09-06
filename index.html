@@ -75,41 +75,29 @@
         width: 100%;
       }
       .change-text {
-        margin-bottom: 4ch;
+        margin-bottom: 5ch;
         perspective: 1000px;
       }
 
       .change-text h3 .word {
         position: absolute;
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 2rem;
         display: flex;
-        opacity: 0;
-
-        /* gradient text fix */
-        background: linear-gradient(90deg, #0ea5e9, #7e22ce);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-
         white-space: normal;
-        transform-style: preserve-3d;
+        opacity: 0;
+        color: #5e1ee7;
       }
-
       .change-text h3 .word .letter {
         position: relative;
         transform-origin: center center 25px;
-        display: inline-block;
       }
-
       .change-text h3 .word .letter.out {
         transform: rotateX(90deg);
-        transition: transform 0.48s cubic-bezier(0.6, 0, 0.7, 0.2);
+        transition: 0.48s cubic-bezier(0.6, 0, 0.7, 0.2);
       }
 
       .change-text h3 .word .letter.in {
-        transition: transform 0.5s ease;
+        transition: 0.5s ease;
       }
 
       .change-text h3 .word .letter.behind {
@@ -429,12 +417,10 @@
           <h1 class="text-4xl md:text-4xl font-bold mb-3">
             Hi, My name is <span class="gradient-text">Amin</span>
           </h1>
-
+          <h3 class="text-2xl md:text-2xl font-medium mb-0">
+            Happy to see you here, Let's Learn Some:
+          </h3>
           <div class="change-text">
-            <h3 class="text-2xl md:text-2xl font-medium mb-0">
-              Happy to see you here, Let's Learn Some:
-            </h3>
-            <br />
             <h3 class="word-head">
               <span class="word">Python</span>
               <span class="word">Java</span>
@@ -455,12 +441,12 @@
           <div class="flex space-x-4">
             <a
               href="#contact"
-              class="px-6 py-3 rounded-full btn-primary font-medium"
+              class="px-6 py-3 rounded-full btn-primary items-center font-medium"
               >Contact Me</a
             >
             <a
               href="#projects"
-              class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition"
+              class="px-6 py-3 rounded-full border border-primary text-primary items-center font-medium hover:bg-primary/10 transition"
               >View Work</a
             >
           </div>
