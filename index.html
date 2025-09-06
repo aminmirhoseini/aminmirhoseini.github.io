@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Portfolio | Dark Theme</title>
+    <title>Modern Portfolio | AmiN</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -76,30 +76,40 @@
       }
       .change-text {
         margin-bottom: 4ch;
+        perspective: 1000px;
       }
+
       .change-text h3 .word {
         position: absolute;
         font-size: 1.5rem;
         font-weight: bold;
         display: flex;
         opacity: 0;
+
+        /* gradient text fix */
         background: linear-gradient(90deg, #0ea5e9, #7e22ce);
         -webkit-background-clip: text;
         background-clip: text;
+        -webkit-text-fill-color: transparent;
         color: transparent;
+
         white-space: normal;
+        transform-style: preserve-3d;
       }
+
       .change-text h3 .word .letter {
         position: relative;
         transform-origin: center center 25px;
+        display: inline-block;
       }
+
       .change-text h3 .word .letter.out {
         transform: rotateX(90deg);
-        transition: 0.48s cubic-bezier(0.6, 0, 0.7, 0.2);
+        transition: transform 0.48s cubic-bezier(0.6, 0, 0.7, 0.2);
       }
 
       .change-text h3 .word .letter.in {
-        transition: 0.5s ease;
+        transition: transform 0.5s ease;
       }
 
       .change-text h3 .word .letter.behind {
@@ -530,11 +540,20 @@
 
           <div class="md:w-2/3 md:pl-12">
             <h3 class="text-2xl font-bold mb-6">Who am I?</h3>
-            <p class="text-slate-400 mb-6">
-              I'm a passionate Full Stack Developer with over 5 years of
-              experience creating modern web applications. I specialize in
-              JavaScript ecosystems including React, Node.js, and modern CSS
-              frameworks.
+            <p class="text-slate-400 mb-6 text-justify text-last-justify">
+              My name is Mohammad Amin (just call me Amin). I previously studied
+              Chemical Engineering at Ferdowsi University of Mashhad, and I am
+              currently pursuing coursework in Artificial Intelligence at
+              Imperial College London. My primary field of study is
+              Bioinformatics, with a particular focus on applying Machine
+              Learning and Deep Learning techniques to enhance the efficiency of
+              drug discovery and development. The ultimate goal of my research
+              is to contribute to treatments for patients, especially those are
+              suffering from cancer. I am delighted to welcome you to my
+              portfolio, where I share my academic projects and professional
+              interests with individuals who are passionate about the
+              intersection of AI and biotechnology. If you have any questions,
+              please use the contact form linked below.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -558,7 +577,7 @@
                 </h4>
                 <h4 class="font-semibold mb-2">
                   Location:
-                  <span class="text-slate-300">San Francisco, CA</span>
+                  <span class="text-slate-300">London, UK</span>
                 </h4>
               </div>
             </div>
